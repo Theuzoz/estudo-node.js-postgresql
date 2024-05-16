@@ -1,4 +1,4 @@
-POST http://localhost:3333/videos
+POST https://estudo-node-postgresql.onrender.com/videos
 Content-Type: application/json
 
 {
@@ -9,19 +9,19 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/videos?search=node
+GET https://estudo-node-postgresql.onrender.com/videos
 
 ###
 
-PUT http://localhost:3333/videos/3c681128-b743-4d66-adc0-d9490964ab22
+PUT https://estudo-node-postgresql.onrender.com/videos/3fe9d7ca-340e-4aad-9b0b-2f83c3a792ba
 Content-Type: application/json
 
 {
     "title": "Video 02",
-    "description": "Primeiro video",
-    "duration": 180
+    "description": "Segundo video",
+    "duration": 200
 }
 
 ###
 
-DELETE http://localhost:3333/videos/8e097cf9-70a3-4373-9392-0488d292d092
+DELETE https://estudo-node-postgresql.onrender.com/videos/3fe9d7ca-340e-4aad-9b0b-2f83c3a792ba
