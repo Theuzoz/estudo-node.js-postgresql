@@ -20,6 +20,7 @@ const database = new DatabasePostgres()
 // Route Parameter
 
 // GET, POST, PUT e DELETE
+// com async e await por ser um banco de dados online
 server.post('/videos', async (request, reply) => {
     const { title, description, duration } = request.body
     
@@ -61,6 +62,7 @@ server.delete('/videos/:id', async (request, reply) => {
     return reply.status(204).send()
 })
 
+// variavel ou porta local
 server.listen({
     port: process.env.PORT ?? 3333,
 })
